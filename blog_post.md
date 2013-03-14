@@ -148,3 +148,12 @@ document.addEventListener('readystatechange', function() {
 }, false);
 
 ```
+
+##### Problem: timer delay is not guaranteed #####
+
+TBD
+http://ejohn.org/blog/how-javascript-timers-work/
+
+#### Second attempt ####
+
+TBD
