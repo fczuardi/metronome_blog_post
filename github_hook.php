@@ -22,7 +22,7 @@ if (!empty($_POST['payload'])) {
   // send us the output
   mail('fabricio@fabricio.org', 'Metronome Blog Post hook `git pull` result', $result);
   // clear APC
-  if (apc_clear_cache('opcode') == false) {
+  if ( function_exists('apc_clear_cache') && (apc_clear_cache('opcode') == false)) {
     mail('root', 'Unable to apc_clear_cache()', '');
   }
 }
